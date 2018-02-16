@@ -1,50 +1,259 @@
 ﻿<!DOCTYPE html>
+<html>
 <head lang="en">
-<head>
   <meta charset="utf-16"/>
   <title>Indirect economisation</title>
   <link rel="stylesheet" href="css/envisioned.css"/>
   <link rel="stylesheet" href="css/tablesaw-stackonly.css"/>
+  <link rel="stylesheet" href="css/nudge.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <article>
-  <a href="with-nav.html" target="_blank">View Envisioned CSS (w/ nav)</a>
-    <h1>Envisioned CSS</h1>
-    <subtitle>Jef Lippiatt</subtitle>
+  <nav class="pushy pushy-left">
+<ul>
+<li class="pushy-item"><a href="#licensing">Preprint licensing</a></li>
+<li class="pushy-item"><a href="#abstract">Abstract</a></li>
+<li class="pushy-item"><a href="#introduction">Introduction</a></li>
+<li class="pushy-item"><a href="#navfont">Font</a></li>
+<li class="pushy-item"><a href="#navlists">Lists</a></li>
+<li class="pushy-item"><a href="#navnotes">Sidenotes</a></li>
+<li class="pushy-item"><a href="#navfigures">Figures</a></li>
+<li class="pushy-item"><a href="#navtables">Tables</a></li>
+<li class="pushy-item"><a href="#navcode">Code</a></li>
+</ul>
+</nav>
+
+<div class="site-overlay"></div>
+
+  <article id="container">
+  <div class="menu-btn">&#43;</div>
+    <h1>Indirect economisation</h1>
+    <h2>The role of economic calculative techniques<br>in electricity system regulations</h2>
+	<br>
+    <subtitle>Henrik Karlstrøm, William Throndsen and Antti Silvast</subtitle>
+
     <section>
-      <p>Envisioned CSS provides styles to give online documentation the hierarchy and clarity of minimalist academic textbooks. The goal of Envisioned CSS is to present text, tables, graphics and callouts in harmony.</p>
-      <p>Envisioned CSS is grateful for <a href="http://www.daveliepmann.com/tufte-css/">Dave Liepmann's Tufte CSS</a> available on GitHub at <a href="https://github.com/daveliepmann/tufte-css">tufte-css</a>. Tufte<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle"/> is a master of clean documentation and his approach has been adapted by Envisioned CSS to improve typography choices and table formatting for online consumption.
-        <span class="sidenote">
-          This page is in fact an adaptation of the <a href="http://rmarkdown.rstudio.com/examples/tufte-handout.pdf">Tufte Handout Example</a> PDF.
-        </span> </p>
-      <p>If you want to help improve Envisioned CSS, feel free to create an issue or pull request on the GitHub project: <a href="https://github.com/nogginfuel/envisioned-css">envisioned-css</a>.
-      <p>This approach isn't to make websites more like books, rather to use existing best practices for documentation and adapt them to the web. This is a starting point not a rigid set of rules.</p>
+		<h2 id="licensing">Note before reading</h2>
+		<h3>Preprint licensing</h3>
+		<p>This is a preprint of an article, meaning it has not yet been subjected to peer review 
+		but may appear somewhat altered as a published article at some point in the future. 
+		This work is licensed under a 
+		<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0 International</a> 
+		license. You are free to share (copy and redistribute in any medium or format) and adapt 
+		(remix, transform, and build upon ) the material for any purpose, as long as you give 
+		<a href="https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart">appropriate credit</a>, 
+		provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, 
+		but not in any way that suggests the licensor endorses you or your use. Of course, 
+		it is only polite to let the authors know if you are using this for anything, 
+		so let us know if this is the case.
+		</p>
+		
+		<h3>Further reading</h3>
+		<p>We support the idea of open access to research. That's why all the links to the literature referenced 
+		in this article lead to	a publicly available version of the publication in question. 
+		If a reference does not have a link, that means no legally open access version of the publication exists. 
+		If you don't have access to	an institutional subscription to these publications, it is usually possible 
+		to contact the author(s) to get a copy.
+		</p>
     </section>
 
     <section>
-      <h2>Getting Started</h2>
-      <p>To use Envisioned CSS, copy <span class="code">envisioned.css</span>, <span class="code">tablesaw-bare.css</span>, <span class="code">Roboto-Regular.ttf</span>, <span class="code">RobotoCondensed-Regular.ttf</span> and <span class="code">RobotoMono-Regular.ttf</span> to your project directory and add the following to your HTML document's <span class="code">head</span> block:</p>
+		<h2 id="abstract">Abstract</h2>
+		<p>Since the 1990s, most European countries have undergone some degree of liberalization of 
+		their electricity infrastructures. This has meant exposing parts of the energy sector, 
+		such as power generation, to competitive entry, while keeping its other parts, such as 
+		electricity grids, intact as regional monopolies operating alongside liberalised energy markets. 
+		Inspired by earlier studies on economisation and valuative regimes, this paper investigates the 
+		consequences of this transition, using the Norwegian case as an example. We argue that the 
+		transition does not constitute economisation in the traditional sense because vital parts of the 
+		grid sector remained publicly regulated monopolies. Instead, we find the transition included a 
+		shift in governing logic from one soundly rooted in engineering and controlled by elected politicians 
+		to one influenced chiefly by economics and controlled by complex calculative regimes in which elected 
+		officials are studiously hands-off. We argue this constitutes a form of indirect economization. 
+		This process of indirect economisation has had obvious implications for the degree of democratic 
+		control over vital societal infrastructure. Thus, we argue that processes of indirect economisation, 
+		sure to be found working elsewhere as well, should be studied alongside general economisation in 
+		order to grasp clearer their implication in modern, liberal societies.
+		</p>
 
+		<h3>Correspondence</h3>
+		<p>
+			<a href="https://www.ntnu.edu/employees/henrikka">Henrik Karlstrøm</a>
+			<label for="1" class="margin-toggle sidenote-number"></label>
+			<input type="checkbox" id="1" class="margin-toggle"/>
+			<span class="sidenote">
+				University Library, Norwegian University of Science and Technology, NTNU, <a href="mailto:henrik.karlstrom@ntnu.no">email</a>
+			</span>,
+			<a href="https://www.ntnu.edu/employees/william.throndsen">William Throndsen</a>
+			<label for="2" class="margin-toggle sidenote-number"></label>
+			<input type="checkbox" id="2" class="margin-toggle"/>
+			<span class="sidenote">
+				Department of Interdisciplinary Studies of Culture, Norwegian University of Science and Technology, NTNU
+			</span>
+			 and 
+			<a href="http://www.stis.ed.ac.uk/people/academic_staff/antti_silvast">Antti Silvast</a>
+			<label for="3" class="margin-toggle sidenote-number"></label>
+			<input type="checkbox" id="3" class="margin-toggle"/>
+			<span class="sidenote">
+				School of Social and Political Science, University of Edinburgh
+			</span>
+		</p>
+		
+		<h3>Keywords</h3>
+		<p>calculative techniques; economisation; energy infrastructure</p>
+	
+    <section>
+		<h2 id="introduction">Introduction</h2>
+		<p>This articles seeks to shed light on the role of economic calculative 
+		techniques in the regulation of important societal functions in a modern market-based political economy. 
+		We study what kind of mathematical formulas and numbers underpin these techniques, 
+		and their changes in recent times. To these ends, we utilise recent concepts from the 
+		fields of social studies of markets and valuation studies. We exemplify them by the case of 
+		changing regulatory regimes for the income of electricity grid companies in Norway, 
+		comparing the current market-based system to the previous regime of total state control over 
+		the electricity sector from production to delivery via the grid.
+		</p>
+
+		<p>Liberalised energy infrastructures have become the norm throughout Europe in recent decades. 
+		This has mostly come about through a transition from a centrally planned, state controlled energy 
+		sector to a division between regional distribution monopolies operating alongside competitive suppliers. 
+		We investigate this transition in the Norwegian context. Focusing on the grid sector we discuss the 
+		implications of transforming the ruling logic of the sector from one grounded in infrastructural and 
+		technological development to one of complex, bureaucratic calculative techniques in service of 
+		optimizing the status quo.
+		</p>
+		
+		<p>These questions are not just of academic interest. They form part of a political discussion 
+		about how to govern an increasingly complex society in an acceptably democratic way. As Rowland and Passoth 
+		point out in a review of recent literature on infrastructure and the state, studying «state <i>through</i> 
+		infrastructure and the state <i>in</i> infrastructure» (Rowland and Passoth 2015, emphasis in original)
+		<label for="4" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="4" class="margin-toggle"/>
+        <span class="marginnote">
+          Rowland, Nicholas J, and Jan-Hendrik Passoth. 2015. Infrastructure and the state in science and technology studies. 
+		Sage Publications.
+        </span>
+		is a crucial part in understanding how decisions that affect broad swathes of society are structured. 
+		Of course, this also has political implications: «to be political in this era is to raise questions about 
+		how the state works» (Guldi 2012:3)
+		<label for="5" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="5" class="margin-toggle"/>
+        <span class="marginnote">
+		Guldi, Jo. 2012. “Roads to Power.” Britain Invents the Infrastructure State, Cambridge Mass./London.
+		</span>		
+		Studying the techniques by which governance happens is equally important to pointing out that governance 
+		is taking place in the first place.
+		</p>
+		
+		<p>The interest in techniques or technologies of government has been a recurring topic of much thought on 
+		the organisation of modern society, perhaps really picking up steam with the lectures of Foucault on political government 
+		(see Collier (2009)
+		<label for="6" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="6" class="margin-toggle"/>
+        <span class="marginnote">
+		Collier, Stephen J. 2009. Topologies of Power. <i>Theory, Culture & Society</i>, 26 (6): 78–108. 
+		</span>
+		and later O’Malley (2012)
+		<label for="7" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="7" class="margin-toggle"/>
+        <span class="marginnote">
+		O’malley, Pat. 2012. <i>Risk, uncertainty and government</i>. Routledge.
+		</span>		
+		and especially the work on critical infrastructure protection by Collier (2011)
+		<label for="8" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="8" class="margin-toggle"/>
+        <span class="marginnote">
+		Collier, Stephen J. 2011. <i>Post-Soviet social: neoliberalism, social modernity, biopolitics</i>. Princeton University Press.
+		</span>
+		and Lakoff (2008)
+		<label for="9" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="9" class="margin-toggle"/>
+        <span class="marginnote">
+		Collier, Stephen, and Andrew Lakoff. 2008. The vulnerability of vital systems: 
+		How ‘critical infrastructure’became a security problem. <i>The Politics of Securing the Homeland: Critical 
+		Infrastructure, Risk and Securitisation</i>. Routledge, 40–62. 
+		</span>
+		These thinkers highlight the importance of examining the interplay of technology, legislative bodies and regulatory 
+		institutions and documents when examining how governance works and comes to be.
+		</p>
+		
+		<p>Here we complement these general social science considerations by focusing on the governance of economic matters specifically. 
+		Çaliskan and Callon (2009;
+		<label for="10" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="10" class="margin-toggle"/>
+        <span class="marginnote">
+		Çalışkan, Koray, and Michel Callon. 2009. <a href="http://koraycaliskan.net/media/files/pdf/K-Caliskan_Economization_Part_1.pdf">
+		Economization, part 1: shifting attention from the economy towards processes of economization</a>. 
+		<i>Economy and Society</i>, 38 (3): 369–98. 
+		</span>
+		2010)
+		<label for="11" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="11" class="margin-toggle"/>
+        <span class="marginnote">
+		Çalışkan, Koray, and Michel Callon. 2010. <a href="http://koraycaliskan.net/media/files/pdf/K-Caliskan_Economization_Part_2.pdf">
+		Economization, part 2: a research programme for the study of markets.</a>
+		<i>Economy and Society</i>, 39 (1). Routledge: 1–32.
+		</span>		
+		have called for studies of what they call economisation, looking at how ever more aspects of society become the object 
+		of economic logics and fall under the purview of the field of economics. They mostly focus on how new areas 
+		of life become governed by market mechanisms, so-called marketisation, but they also discuss how the logic of 
+		competition and the tools, concepts and materials of economics render a phenomenon that used to be seen as 
+		outside the grasp of the market as ‘economic’. Following this, (Breslau 2013
+		<label for="12" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="12" class="margin-toggle"/>
+        <span class="marginnote">
+		Breslau, Daniel. 2013. Designing a market-like entity: Economics in the politics of market formation. 
+		<i>Social Studies of Science</i>, 43 (6): 829–51.
+		</span>
+		has used economisation theory to analyse the construction of what he calls market-like entities, 
+		parts of the electricity infrastructure of the US that is now being subjected to pseudo-competition and 
+		financialisation in order to attain the appearance of a competitive market. (Karlstrøm 2012)
+		<label for="13" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="13" class="margin-toggle"/>
+        <span class="marginnote">
+		Karlstrøm, Henrik. 2012. <a href="https://brage.bibsys.no/xmlui/bitstream/handle/11250/244161/516270_FULLTEXT02.pdf?sequence=2">
+		Empowering markets?: The construction and maintenance of a deregulated market for electricity in Norway.</a> 
+		Norwegian University of Science & Technology.
+		</span>
+		and (Silvast 2017b)
+		<label for="14" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="14" class="margin-toggle"/>
+        <span class="marginnote">
+		Silvast, Antti. 2017. <i>Making Electricity Resilient: Risk and Security in a Liberalized Infrastructure</i>. Taylor & Francis. 
+		</span>
+		have shown how similar processes have been going on in Norway and Finland respectively.
+		</p>
+		
+		<p>However, there are sectors of society that are not being turned into such market-like entities. With previously integrated societal functions such as infrastructure maintenance becoming separated into market-exposed companies and ‘natural monopolies’, the latter are finding themselves governed by a new set of financial regulations. This is happening even when - according to the original intention - these parts of infrastructures were not supposed to be subjected to market competition and hence efficiency gains. This is certainly a form of economisation, although not in the direct sense of Çaliskan and Callon. Rather, it might be called indirect economisation. Our claim is that the indirect way in which such economisation processes happens has consequences for our understanding of the room for democratic control over vital societal infrastructure.
+		</p>
+		
+		<p>In the upcoming sections we further elaborate the concept of economisation and valuation theory to understand the methods by which economisation has been carried out. We then provide the background of the Norwegian electricity grid regulation regime and an overview over how the governing logic of this system has changed considerably after the introduction of the market liberalisation and the separation of grid operation into natural monopolies. This is intended as a concrete example of how indirect economisation poses some interesting quandaries for the governance of infrastructure and other important societal sectors in modern market society. We argue that this transition to a system of indirect economisation has an impact on the possibilities for transparency in a process that ultimately decides a large part of the costs to end users of having a functional infrastructure that supports almost all aspects of everyday life.
+		</p>
+		
       <pre class="code">
-      	&lt;link rel="stylesheet" href="css/envisioned.css"/&gt;
-        &lt;link rel="stylesheet" href="css/tablesaw-bare.css"/&gt;
-        &lt;link rel="stylesheet" href="css/nudge.css"/&gt;
+      	&lt;nav class="pushy pushy-left"/&gt;
+            &lt;ul&gt;
+            	&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
       </pre>
-
-	  <p>You will also need to copy <span class="code">jquery.js</span>,<span class="code">tablesaw-stackonly.js</span> and <span class="code">nudge.min.js</span> (or the folder structure) add the following block prior to the closing <span class="code">&lt;/body&gt;</span> tag:
-
-	  <pre class="code">
-      	&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-        &lt;script src="js/tablesaw-bare.js"&gt;&lt;/script&gt;
-        &lt;script src="js/nudge.min.js"&gt;&lt;/script&gt;
+      
+      <p>The above snippet needs to live within the <span class="code">body</span> tag, but it must reside above the rest of the page content. So the navigation can nudge the content over, put the entirety your <span class="code">article</span> within a <span class="code">div</span> tag:</p>
+      
+      <pre class="code">
+      	&lt;div id="container"/&gt;
+            &lt;article&gt;
+            	&lt;section&gt;
+                	&lt;p&gt;Section 1 Content&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;section&gt;
+                	&lt;p&gt;Section 2 Content&lt;/p&gt;
+                &lt;/section&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
       </pre>
-
-      <p>Use the following CSS rules, and the Envisioned CSS structure described for optimal results.  Use your preferred browser development tools for additional clarity.</p>
-    </section>
-
-    <section>
-      <h2>Fundamentals</h2>
+      
       <h3>Sections</h3>
       <p>Organize your document with an <span class="code">article</span> element inside your <span class="code">body</span> tag. Inside that, use <span class="code">section</span> tags around each logical grouping of text and headings.</p>
 
@@ -55,16 +264,16 @@
         <footer><a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, 'Book design: advice and examples' thread</a></footer>
       </blockquote>
       <p><span class="newthought">In his later books<label for="2" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote">E.g. <a href="http://www.edwardtufte.com/tufte/books_be">Beautiful Evidence</a></span>, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. For this we use a span with the class <span class="code">newthought</span>, as demonstrated at the beginning of this paragraph. The vertical space is accomplished separately, through the <span class="code">&lt;section&gt;</span> class. The vertical space seems unnecessary when using this technique to replace <span class="code">h2</span> elements, as in this paragaph. Whichever approach you choose, be consistent. Do not alternate use of header elements and the <span class="code">newthought</span> technique. Pick one approach and stick to it.</p>
-      <h3>Color</h3>
+      <h3 id="navcolor">Color</h3>
       <p>Although print handouts typically have a pure white background, the web is better served by the use of slightly off-white and off-black colors. This approach reduces eye strain and improves readability. The selected hues are <span class="code">#fefefe</span> (background) and <span class="code">#222</span> (text).</p>
       <p>Other types of content, such as links and code, have slightly different visual treatments. Sidenote numbers are bright red to distinguish them from regular text.</p>
 
-      <h3>Font</h3>
+      <h3 id="navfont">Font</h3>
       <p>In print, Tufte uses the proprietary Monotype Bembo<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle"/><span class="sidenote">See Tufte's comment in the <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000Vt">Tufte book fonts</a> thread.</span> font. However, reading online is a much different experience. The fonts selected are all within the Roboto<label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle"/><span class="sidenote">See the <a href="https://www.google.com/fonts/specimen/Roboto">Roboto</a> styles and variations.</span> Family which improve readability. Roboto is the signature font family and the default font on Android and ChromeOS.</p>
       <p>Envisioned CSS includes several Roboto fonts using <span class="code">@font-face</span>. This means you'll have to make the .ttf files available to your readers. By default I've set Roboto Condensed for the body font, however, if you desire more word spacing you can easily which it to Roboto regular.</p>
       <p>Code snippets (using the <span class="code">code</span> class) are RobotoMono-Regular<label for="5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="5" class="margin-toggle"/><span class="sidenote">See the <a href="https://www.google.com/fonts/specimen/Roboto+Mono">Roboto Mono</a> styles and variations.</span> font.</p>
 
-      <h3>Lists</h3>
+      <h3 id="navlists">Lists</h3>
       <p>Tufte points out that while lists have valid uses, they tend to promote ineffective writing habits due to their "lack of syntactic and intellectual discipline". He is particularly critical of hierarchical and bullet-pointed lists. So before reaching for an HTML list element, ask yourself:</p>
       <ul>
         <li>Does this list actually have to be represented using an HTML <span class="code">ul</span> or <span class="code">ol</span> element?</li>
@@ -76,7 +285,7 @@
     </section>
     
     <section>
-      <h2>Sidenotes</h2>
+      <h2 id="navnotes">Sidenotes</h2>
       <p>One of the most distinctive features of Tufte's style is his extensive use of sidenotes.<label for="6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="6" class="margin-toggle"/><span class="sidenote">This is a sidenote.</span> Perhaps you have noticed their use in this document already.</p>
       <p>On large viewports, Envisioned CSS uses the margin for sidenotes, margin notes, and small figures. Sidenotes consist of 1) a superscript reference number that goes inline with the text, and 2) a sidenote containing content that repeats the superscripted number to reinforce its connection to the text. To add the former, just put <span class="code">&lt;span class="sidenote-number"&gt;&lt;/span&gt;</span> where you want the reference to go. Immediately after that goes the <span class="code">span</span> with class <span class="code">sidenote</span>, inserted directly into the middle of the <span class="code">p</span> tag containing the reference text. This will give the sidenote the correct height.</p>
       <p>If you don't want footnote-style numberings on your sidenotes, what you want is a margin note.
@@ -88,7 +297,7 @@
     </section>
 
     <section>
-      <h2>Figures</h2>
+      <h2 id="navfigures">Figures</h2>
       <p>Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept in context with the text that discusses them. In print, this means they are not relegated to a separate page. On online, that means graphics and their accompanying text are displayed in context to minimize extra clicks and unnecessary scrolling. On small devices this context has been adapted with minimal clicking.</p>
       <p>Images and graphics play an integral role in Tufte’s work<label for="8" class="margin-toggle">&#8853;</label><input type="checkbox" id="8" class="margin-toggle"/><span class="marginnote"><img src="http://placehold.it/396x255.png"/>Figure 1: Visual Comparison of species</span>. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a <span class="code">p</span> tag, as seen in Figure 1 to the right of this paragraph.</p>      
       <p>If you need a full-width figure, give it the <span class="code">fullwidth</span> class. Make sure that's inside an <span class="code">article</span>, and it will take up (almost) the full width of the screen. Don't wrap the figure in a paragraph tag. To give it a caption, use a <span class="code">figcaption</span> tag inside the <span class="code">figure</span> tag. This approach is demonstrated in Figure 2.</p>
@@ -108,7 +317,7 @@
     </section>
 
     <section>
-      <h2>Tables</h2>
+      <h2 id="navtables">Tables</h2>
       <p>Tables are presented by default with minimal grid lines. Table labels are margin notes with an additional <span class="code">table-label</span> class, placed inside a <span class="code">div</span> tag of class <span class="code">table-wrapper</span> that wraps the <span class="code">table</span>. Note that on smaller viewports (e.g. tablets and phones) tables will collapse into unordered lists. This adaptive functionality, provided by TableSaw<label for="9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="9" class="margin-toggle"/><span class="sidenote"><a href="https://github.com/filamentgroup/tablesaw" target="_blank">Tablesaw</a> was created by <a href="https://www.filamentgroup.com/" target="_blank">filament group</a>.</span>, makes tabular data easier to consume on small devices.</p>
         <div class="table-wrapper">
           <span class="table-caption">
@@ -130,7 +339,7 @@
 
 
     <section>
-      <h2>Code</h2>
+      <h2 id="navcode">Code</h2>
       <p>Code samples are monospace using the <span class="code">code</span> class, as I've been using in this document to denote HTML tags like the word 'code' earlier in this sentence. Code blocks use that class in conjunction with the <span class="code">pre</span> tag, which gives us indentation too:</p>
       <pre class="code">
 // imperative programming:
@@ -139,9 +348,10 @@ for (i = 0; i++; i <= num) {
 }
       </pre>
     </section>
-</article>
-    
+  </article>
+
 <script src="js/jquery.js"></script>
 <script src="js/tablesaw-stackonly.js"></script>
+<script src="js/nudge.min.js"></script>
 </body>
 </html>
