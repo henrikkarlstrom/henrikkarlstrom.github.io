@@ -16,39 +16,38 @@
   src: url("../font/roboto/RobotoCondensed-Regular.ttf");
   font-weight: 400; }
 
-html { font-size: 15px; }
+html { font-size: 14px; }
 
 body { width: 87.5%;
        margin-left: auto;
        margin-right: auto;
        padding-left: 12.5%;
-	   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	   font-family: 'Roboto', Arial, Helvetica, sans-serif;
        background-color: #fefefe;
        color: #222;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
 
-h1 { font-weight: 400;
+h1 { font-weight: 300;
      margin-top: 4rem;
      margin-bottom: 1.5rem;
-     font-size: 3.2rem;
+     font-size: 2.6rem;
      line-height: 1; }
 
-h2 { font-style: italic;
-     font-weight: 400;
-     margin-top: 2.1rem;
+h2 { font-weight: 400;
+     margin-top: 0.1rem;
      margin-bottom: 0;
-     font-size: 2.2rem;
+     font-size: 1.8rem;
      line-height: 1; }
 
 h3 { font-style: italic;
      font-weight: 400;
-     font-size: 1.7rem;
+     font-size: 1.5rem;
      margin-top: 2rem;
      margin-bottom: 0;
      line-height: 1; }
 
-subtitle { font-style: italic;
+subtitle {
            margin-top: 1rem;
            margin-bottom: 1rem;
            font-size: 1.8rem;
@@ -59,7 +58,7 @@ table { width: 98%;
         text-align: right;
         font-size: 1.2rem;
         line-height: 1.4;
-        margin: 1.4rem 1%;
+        margin: 1.3rem 1%;
         border-collapse: separate;
         border-spacing: 0 5px;
         -webkit-font-feature-settings: 'tnum'; /* This is technically redundant */
@@ -79,7 +78,7 @@ article { position: relative;
           padding: 5rem 0rem; }
 
 section { padding-top: 1rem;
-          padding-bottom: 1rem; }
+          padding-bottom: 0.8rem; }
 
 p, ol, ul { font-size: 1.4rem; }
 
