@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/tablesaw-stackonly.css"/>
   <link rel="stylesheet" href="css/nudge.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 <body>
   <nav class="pushy pushy-left">
@@ -16,10 +17,11 @@
 <li class="pushy-item"><a href="#introduction">Introduction</a></li>
 <li class="pushy-item"><a href="#economisation">Economisation</a></li>
 <li class="pushy-item"><a href="#calculationrole">The role of calculations</a></li>
-<li class="pushy-item"><a href="#navnotes">Sidenotes</a></li>
-<li class="pushy-item"><a href="#navfigures">Figures</a></li>
-<li class="pushy-item"><a href="#navtables">Tables</a></li>
-<li class="pushy-item"><a href="#navcode">Code</a></li>
+<li class="pushy-item"><a href="#norwayel">The Norwegian electricity system</a></li>
+<li class="pushy-item"><a href="#gridlock">Gridlock</a></li>
+<li class="pushy-item"><a href="#calcudem">Calculative democracy</a></li>
+<li class="pushy-item"><a href="#conclusion">Conclusion</a></li>
+<li class="pushy-item"><a href="#appendix">Appendix</a></li>
 </ul>
 </nav>
 
@@ -55,6 +57,9 @@
 		If you don't have access to	an institutional subscription to these publications, it is usually possible 
 		to contact the author(s) to get a copy.
 		</p>
+		
+		<h3>Acknowledgment</h3>
+		Thanks to Knut H. Sørensen for giving us the idea of studying these policy documents.
     </section>
 
     <section>
@@ -416,123 +421,384 @@
 		</p>
 	</section>
 	
-      <pre class="code">
-      	&lt;nav class="pushy pushy-left"/&gt;
-            &lt;ul&gt;
-            	&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-      </pre>
-      
-      <p>The above snippet needs to live within the <span class="code">body</span> tag, but it must reside above the rest of the page content. So the navigation can nudge the content over, put the entirety your <span class="code">article</span> within a <span class="code">div</span> tag:</p>
-      
-      <pre class="code">
-      	&lt;div id="container"/&gt;
-            &lt;article&gt;
-            	&lt;section&gt;
-                	&lt;p&gt;Section 1 Content&lt;/p&gt;
-                &lt;/section&gt;
-                &lt;section&gt;
-                	&lt;p&gt;Section 2 Content&lt;/p&gt;
-                &lt;/section&gt;
-            &lt;/article&gt;
-        &lt;/div&gt;
-      </pre>
-      
-      <h3>Sections</h3>
-      <p>Organize your document with an <span class="code">article</span> element inside your <span class="code">body</span> tag. Inside that, use <span class="code">section</span> tags around each logical grouping of text and headings.</p>
+	<section>
+	<h2 id="norwayel">The Norwegian electricity system</h2>
+		<p>The story of the Norwegian electricity system is both typical and somewhat special. 
+		Blessed with an abundance of waterfalls and a commitment to providing citizens (and, lest we forget, businesses) 
+		with cheap and secure sources of electricity, the developers of the Norwegian electricity system spent the first 
+		sixty years of the 20th century expanding the production and distribution capabilities of electricity utilities.
+		</p>
 
-      <h3>Headings</h3>
-      <p>Envisioned CSS uses <span class="code">h1</span> for the page title, <span class="code">h2</span> for section headings, and <span class="code">h3</span> for subsection headings. More specific headings are not supported. Clean documentation should not use more than 3 levels of hierarchy. If this feels restrictive, consider restructuring your content:</p>
-      <blockquote cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-        <p>[It is] notable that the Feynman lectures (3 volumes) write about all of physics in 1800 pages, using only 2 levels of hierarchical headings: chapters and A-level heads in the text. It also uses the methodology of <em>sentences</em> which then cumulate sequentially into <em>paragraphs</em>, rather than the grunts of bullet points. Undergraduate Caltech physics is very complicated material, but it didn't require an elaborate hierarchy to organize.</p>
-        <footer><a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, 'Book design: advice and examples' thread</a></footer>
-      </blockquote>
-      <p><span class="newthought">In his later books<label for="2" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote">E.g. <a href="http://www.edwardtufte.com/tufte/books_be">Beautiful Evidence</a></span>, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. For this we use a span with the class <span class="code">newthought</span>, as demonstrated at the beginning of this paragraph. The vertical space is accomplished separately, through the <span class="code">&lt;section&gt;</span> class. The vertical space seems unnecessary when using this technique to replace <span class="code">h2</span> elements, as in this paragaph. Whichever approach you choose, be consistent. Do not alternate use of header elements and the <span class="code">newthought</span> technique. Pick one approach and stick to it.</p>
-      <h3 id="navcolor">Color</h3>
-      <p>Although print handouts typically have a pure white background, the web is better served by the use of slightly off-white and off-black colors. This approach reduces eye strain and improves readability. The selected hues are <span class="code">#fefefe</span> (background) and <span class="code">#222</span> (text).</p>
-      <p>Other types of content, such as links and code, have slightly different visual treatments. Sidenote numbers are bright red to distinguish them from regular text.</p>
+		<p>From the start, the electricity system was conceived as a total service provider to the Norwegian public - 
+		it should provide sufficient amounts of electricity at reasonable prices to end users and maintain an electrical 
+		grid that would ensure security of delivery through adverse situations such as dry autumns, cold winters or sudden 
+		surges of demand.<label for="26" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="26" class="margin-toggle"/>
+        <span class="sidenote">
+		Thue, Lars. 1996. <i>Strøm og styring: norsk kraftliberalisme i historisk perspektiv</i>. Ad notam Gyldendal. 
+		</span>
+		Under the prevailing engineering logic of the post-war period, it was considered most rational that production 
+		and distribution be kept within the same unit. Maximum stability both for customers and utilities would be achieved 
+		through the construction of regional monopolies for supplying power, where profits from the sale of electricity would 
+		subsidise the maintenance of the grid.
+		</p>
 
-      <h3 id="navfont">Font</h3>
-      <p>In print, Tufte uses the proprietary Monotype Bembo<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle"/><span class="sidenote">See Tufte's comment in the <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000Vt">Tufte book fonts</a> thread.</span> font. However, reading online is a much different experience. The fonts selected are all within the Roboto<label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle"/><span class="sidenote">See the <a href="https://www.google.com/fonts/specimen/Roboto">Roboto</a> styles and variations.</span> Family which improve readability. Roboto is the signature font family and the default font on Android and ChromeOS.</p>
-      <p>Envisioned CSS includes several Roboto fonts using <span class="code">@font-face</span>. This means you'll have to make the .ttf files available to your readers. By default I've set Roboto Condensed for the body font, however, if you desire more word spacing you can easily which it to Roboto regular.</p>
-      <p>Code snippets (using the <span class="code">code</span> class) are RobotoMono-Regular<label for="5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="5" class="margin-toggle"/><span class="sidenote">See the <a href="https://www.google.com/fonts/specimen/Roboto+Mono">Roboto Mono</a> styles and variations.</span> font.</p>
+		<p>One feature of this commitment to guaranteed supply of electricity was the need, under an engineering dominated logic, 
+		to ensure that the system could run even during demand peaks.<label for="27" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="27" class="margin-toggle"/>
+        <span class="sidenote">
+		Throndsen, William, and Marianne Ryghaug. 2015. 
+		<a href="https://brage.bibsys.no/xmlui/bitstream/handle/11250/2457614/material+publics+throndsen+ryghaug.pdf?sequence=1">Material 
+		participation and the smart grid: exploring different modes of articulation</a>. <i>Energy Research & Social Science</i> 9: 157–65.
+		</span>
+		As a consequence the Norwegian electricity system was somewhat over-dimensioned. Construction of new plants was started 
+		before demand could completely catch up with supply, often with an eye to which strategic developments could be had from it, 
+		for example through stimulating growth in certain parts of the country by opening hydro plants where one wanted to attract industry.
+		</p>
 
-      <h3 id="navlists">Lists</h3>
-      <p>Tufte points out that while lists have valid uses, they tend to promote ineffective writing habits due to their "lack of syntactic and intellectual discipline". He is particularly critical of hierarchical and bullet-pointed lists. So before reaching for an HTML list element, ask yourself:</p>
-      <ul>
-        <li>Does this list actually have to be represented using an HTML <span class="code">ul</span> or <span class="code">ol</span> element?</li>
-        <li>Would my idea be better expressed as sentences in paragraphs?</li>
-        <li>Is my message causally complex enough to warrant a flow diagram instead?</li>
-      </ul>
-      <p>This is but a small subset of a proper overview of the topic of lists in communication. A better way to understand Tufte's thoughts on lists would be to read "The Cognitive Style of PowerPoint: Pitching Out Corrupts Within," a chapter in Tufte's book <em>Beautiful Evidence</em>, excerpted at some length by Tufte himself <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0002QF">on his website</a>. The whole piece is information-dense and therefore difficult to summarize. He speaks to web design specifically, but in terms of examples and principles rather than as a set of simple do-this, don't-do-that prescriptions. It is well worth reading in full for that reason alone.</p>
-      <p>For these reasons, Envisioned CSS encourages caution before reaching for a list element, and by default removes the bullet points from unordered lists.</p>
-    </section>
-    
-    <section>
-      <h2 id="navnotes">Sidenotes</h2>
-      <p>One of the most distinctive features of Tufte's style is his extensive use of sidenotes.<label for="6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="6" class="margin-toggle"/><span class="sidenote">This is a sidenote.</span> Perhaps you have noticed their use in this document already.</p>
-      <p>On large viewports, Envisioned CSS uses the margin for sidenotes, margin notes, and small figures. Sidenotes consist of 1) a superscript reference number that goes inline with the text, and 2) a sidenote containing content that repeats the superscripted number to reinforce its connection to the text. To add the former, just put <span class="code">&lt;span class="sidenote-number"&gt;&lt;/span&gt;</span> where you want the reference to go. Immediately after that goes the <span class="code">span</span> with class <span class="code">sidenote</span>, inserted directly into the middle of the <span class="code">p</span> tag containing the reference text. This will give the sidenote the correct height.</p>
-      <p>If you don't want footnote-style numberings on your sidenotes, what you want is a margin note.
-        <label for="7" class="margin-toggle">&#8853;</label>
-        <input type="checkbox" id="7" class="margin-toggle"/>
-        <span class="marginnote">
-          This is a margin note. Notice there isn't a number preceding the note.
-        </span> They are almost identical to sidenotes but are kept semantically distinct because they operate differently on small screens. Figures in the margin are created as margin notes, as demonstrated in the next section.</p>
-    </section>
+		<p>From the point of view of supply and demand, this was an enormous waste of societal resources. The system relied entirely on a 
+		form of centralized planning that in the 1980s was beginning to be viewed with a certain scepticism both from social scientists 
+		(economists and political scientists) and political agents in general. Rather, there was a move towards what was seen as a more 
+		organic, self-organising principle of supply and demand with regards to business and the dimensioning of infrastructures. 
+		It would no longer be the role of the central state to dictate where and under what circumstances businesses should locate.
+		</p>
+		
+		<p>Before the liberalisation of the Norwegian electricity market in 1990, there was no general public market for electricity in Norway. 
+		Rather, there was a limited and internal auction-based electricity trading scheme within Norway and between certain actors and their 
+		international counterparts<label for="28" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="28" class="margin-toggle"/>
+        <span class="sidenote">
+		Kaijser, Arne, and Marika Hedin. 1995. Nordic Energy Systems. <i>Historical Perspectives on Current Issues</i>. Report.
+		</span><label for="29" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="29" class="margin-toggle"/>
+        <span class="sidenote">
+		Silvast, Antti. 2017. <i>Making Electricity Resilient: Risk and Security in a Liberalized Infrastructure</i>. Taylor & Francis. 
+		</span>
+		, and the sector was subject to strict price controls. Prices were set by Parliament on a yearly basis, based on engineers’ 
+		predictions of the long-term marginal cost of production (LTMCP) for electricity, which took into account the cost of building 
+		new plants with a certain depreciation factor as well as predictions of future demand levels.
+		</p>
+		
+		<p>The LTMCP is an interesting case of one type of economic calculative technique that was present in the Norwegian electricity 
+		infrastructure from the very start. It relied on a specific set of assumptions that were seldom challenged, and which 
+		shaped both the way Norwegians were allowed to use electricity and the very landscape of the country itself.
+		<label for="30" class="margin-toggle">&#8853;</label><input type="checkbox" id="30" class="margin-toggle">
+		<span class="marginnote">
+		<span style="display: block;">A typical LTMCP equation: <br />
+		<span class="math display">
+		<span class="math display">\[LTMCPy = \sum_{t=T_i}^{T_f}a_t\frac{\Delta C_p(t)\times (1+p)^{-(t-YR)}}{\Delta P(t)\times (1+p)^{-(t-YR)}}\]
+		</span></span></span></span>
+		The LTMCP represents a typical engineering approach to infrastructure dimensioning. By assuming that the demand for electricity 
+		was linearly scalable and projecting historical trends into the future, it was calculated according to a formula similar to 
+		the example, which is still used to a certain degree in making projections of the future price of electricity.
+		</p>
 
-    <section>
-      <h2 id="navfigures">Figures</h2>
-      <p>Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept in context with the text that discusses them. In print, this means they are not relegated to a separate page. On online, that means graphics and their accompanying text are displayed in context to minimize extra clicks and unnecessary scrolling. On small devices this context has been adapted with minimal clicking.</p>
-      <p>Images and graphics play an integral role in Tufte’s work<label for="8" class="margin-toggle">&#8853;</label><input type="checkbox" id="8" class="margin-toggle"/><span class="marginnote"><img src="http://placehold.it/396x255.png"/>Figure 1: Visual Comparison of species</span>. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a <span class="code">p</span> tag, as seen in Figure 1 to the right of this paragraph.</p>      
-      <p>If you need a full-width figure, give it the <span class="code">fullwidth</span> class. Make sure that's inside an <span class="code">article</span>, and it will take up (almost) the full width of the screen. Don't wrap the figure in a paragraph tag. To give it a caption, use a <span class="code">figcaption</span> tag inside the <span class="code">figure</span> tag. This approach is demonstrated in Figure 2.</p>
-      <p class="code">Data plot description</p>
-      <figure class="fullwidth">
-        <img src="http://placehold.it/1282x246.png"/>
-        <figcaption>Figure 2: Full width figure</figcaption>
-      </figure>
-      <br/>
-      <p>Besides margin and full width figures, you can of course also include figures constrained to the main column. You're going to have to police yourself with the size of any images. Wrap the <span class="code">figure</span> tag in a paragraph tag. Any label or margin note goes in a <span class="code">figcaption</span> tag inside the figure.</p>
-      <p>
-        <figure>
-          <img src="http://placehold.it/757x472.png"/>
-          <figcaption>Figure 3: A figure the width of the main column</figcaption>
+		<p>In this formula, the yearly long-term marginal cost of production of electricity is seen as a function of the yearly cost 
+		of constructing the new plants that would be needed because of the linear growth in demand as averaged over a period of some 
+		<i>t</i> years (usually 30) combined with the actual marginal cost of producing an extra kWh of electricity in existing plants. 
+		Because the marginal cost of hydroelectricity after initial investments are made is very low, old power plants become very 
+		profitable after some decades, and the added income from some of the older utilities in the south of Norway was used, 
+		together with handsome state guarantees, to subsidise newer less profitable ones. Through the linking of profits from old 
+		plants and subsidies for constructing new plants, the system worked to perpetuate itself, with ever more power plants being 
+		constructed as a result, sometimes at great cost both to taxpayers and to local environments.
+		</p>
+		
+		<p>As mentioned, this way of operating was not seen very favourably by economists. Not only did it entail the use of regional 
+		monopolies for the production of electricity, but there was also governmental price control, meaning utilities had little 
+		chance or incentive to make changes to achieve efficiency gains. In addition, the use of cross-subsidies internally in the 
+		utilities and tax-funded state guarantees in cases of loss of income for utilities meant that it was very opaque what the 
+		production of electricity was really costing the Norwegian public.
+		</p>
+		
+		<p>Through a concerted effort over decades from economists, entailing the production of more than sixty research reports and 
+		hundreds of public debate articles from economists working at the Norwegian School of Economics, combined with the general 
+		shift towards more market-oriented forms of governance through the 1980s that saw the election of the first non-Labour 
+		government in a long time in 1989, a shift from an engineering logic to an economic logic happened. In 1990, a new Energy Act 
+		was passed, splitting electricity production and distribution into two sectors with different governance logics.
+		</p>
+		
+		<p>In the current setup the Norwegian electricity system after production and sale of electricity is separated from 
+		distribution and grid maintenance. In contrast to the politically defined electricity price of yore, prices are now set 
+		in the competitive market for production utilities. For end-use, the role of the consumer is reacting to price information. 
+		The Norwegian Competition Authorities provide consumers with a continuously updated web portal where they can compare prices 
+		and different pricing schemes.<label for="31" class="margin-toggle sidenote-number"></label><input type="checkbox" id="31" class="margin-toggle">
+		<span class="sidenote">Similar portals exist in other countries, such as <a href=https://www.ukpower.co.uk/">UKPower</a>
+		in the UK and <a href="http://sahkonhinta.fi/">Energiavirasto</a> in Finland.
+		</span>
+		Norway has also been very active in reducing barriers to utility changing. Without a doubt, Norwegian households have been 
+		encouraged to see themselves as actors in a market for electricity that should engage in price arbitrage, i.e. the possibility 
+		to switch between competing utilities in order to keep prices down and the pressure for efficiency on the side of 
+		companies up.<label for="32" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="32" class="margin-toggle"/>
+        <span class="sidenote"> 
+		Karlstrøm, Henrik. 2012. <a href="https://brage.bibsys.no/xmlui/bitstream/handle/11250/244161/516270_FULLTEXT02.pdf?sequence=2">
+		Empowering markets?: The construction and maintenance of a deregulated market for electricity in Norway</a>. 
+		Norwegian University of Science & Technology. 
+		</span>
+		There is also a role for electricity trading and price arbitrage between utilities, and some companies have sprung up that just 
+		broker delivery contracts between utilities.
+		</p>
+	</section>
+	
+	<section>
+	<h2 id="gridlock">Gridlock</h2>
+		<p>This shows how the production side of electricity was identified as a prime target for a conscious economisation effort, 
+		moving from an engineering logic to using the tools of economics to deliver a new politics of electricity in Norway. 
+		What about the other side of the system, the grid companies that could not be subjected to competition because it makes no 
+		sense to impose competition on physical infrastructure? Like other fixed infrastructures such as roads or railroads, the 
+		governance of the electricity grid is still considered a ‘natural monopoly’ in economic terms. This is due to the nature of 
+		these systems, where it makes very little sense to try and construct competing systems alongside the existing ones. Rather, 
+		ways to simulate competition are sought. This often takes the form of public regulation of the maximum income of the grid companies, 
+		encouraging them to focus on improving efficiency rather than increasing prices in order to receive increased revenue.
+		</p>
+	
+		<p>In order to avoid the possible misuse of their monopoly status, Norwegian grid companies see their income strictly regulated by 
+		the Norwegian Water and Energy Directorate (NVE). NVE subjects the grid companies to yearly price controls based on reports of the 
+		size their customer base, projections of their costs in the coming year and calculations of a large set of other factors such as 
+		land rent, interest rates, equipment investment depreciation and the like. These price controls rely on a host of calculative 
+		techniques to be effective, which are constantly being challenged by the companies subjected to them. These techniques range from 
+		projections of economic development and simulated future demand to retroactive adjustments of budgets to fit updated information about 
+		costs and income. This is obviously constitutes a case in which we have calculative devices that 
+		MacKenzie<label for="33" class="margin-toggle sidenote-number"></label>
+		<input type="checkbox" id="33" class="margin-toggle"/>
+        <span class="sidenote">MacKenzie, Donald. 2008. <i>An engine, not a camera: How financial models shape markets</i>. Mit Press. 
+		</span>
+		would refer to as having effective rather than generic performativity. As we shall see in the following, their introduction 
+		marks a significant difference compared to the situation in which they were absent.
+		</p>
+
+		<p>The figure below gives a partial picture of how one such calculation of the income roof for a grid company is produced. 
+		It was used in determining the income roof of grid companies in 2007, and is taken from one of the procedural documents used by 
+		NVE to determine the allowed income roof for the period 2006-2008.<label for="34" class="margin-toggle sidenote-number"></label>
+		<input type="checkbox" id="34" class="margin-toggle"/>
+        <span class="sidenote">"Complaints regarding decisions about income roof for 2007". NVE 200802911-12. 
+		</span>
+		This document details not only the process NVE follows to establish the yearly allowed income for 
+		the grid companies, but also the procedure whereby the companies have an opportunity to contest the findings of NVE on the basis 
+		of wrongful representation of their own or NVE’s data. Of course, in the final instance NVE is still regulator, and acts as judge 
+		in determining the merit of a complaint or counter-calculation, but the document lays out the reasoning behind each calculation and 
+		appeals decision.
+		</p>
+		
+		<figure>
+          <img src="NVEincome.jpg" width=600/>
+          <figcaption>Figure 1: An example of some of the calculations for grid company income regulation.</figcaption>
         </figure>
-      </p>
-    </section>
+		<br>
+		<p>In this formula, we see a single, seemingly simple formula for the calculation of the current year’s allowed income (<i>TI</i> 
+		<sub>[year]</sub>) 
+		at the top, containing only four terms. However, these terms are themselves nested formulas containing more terms that can be 
+		traced in other policy documents.
+		<label for="35" class="margin-toggle">&#8853;</label><input type="checkbox" id="35" class="margin-toggle">
+		<span class="marginnote">
+		<span style="display: block;">The formula for calculating allowed income for grid companies:<br />
+		<span class="math display">
+		<span class="math display">\[TI_{2007} = IR_{2007} + KON_{2007} + E_{2007} - KILE_{2007}\]
+		</span></span></span></span>
+		Each of the terms of the formula needs to be specified according to rules found in other regulatory 
+		documents scattered between different regulatory bodies with very different scopes of action, such as the Ministry of Energy, NVE, 
+		Statistics Norway and the Central Bank.
+		</p>
 
-    <section>
-      <h2 id="navtables">Tables</h2>
-      <p>Tables are presented by default with minimal grid lines. Table labels are margin notes with an additional <span class="code">table-label</span> class, placed inside a <span class="code">div</span> tag of class <span class="code">table-wrapper</span> that wraps the <span class="code">table</span>. Note that on smaller viewports (e.g. tablets and phones) tables will collapse into unordered lists. This adaptive functionality, provided by TableSaw<label for="9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="9" class="margin-toggle"/><span class="sidenote"><a href="https://github.com/filamentgroup/tablesaw" target="_blank">Tablesaw</a> was created by <a href="https://www.filamentgroup.com/" target="_blank">filament group</a>.</span>, makes tabular data easier to consume on small devices.</p>
-        <div class="table-wrapper">
+
+		<p>To take only the general formula itself, the state provides companies with a calculation of yearly grid costs (<i>KON</i> <sub>[year]</sub>), 
+		municipalities impose property taxes (<i>E</i> <sub>[year]</sub>) and there is a separate calculation for what is termed costs of delivery loss 
+		(<i>KILE</i> <sub>[year]</sub>) that are incurred when the grid company fails to deliver electricity to institutional customers (such as factories or 
+		hospitals) that rely on secure and constant delivery of electricity. The municipal property taxes are the result of yearly political 
+		negotiations and belong to a process separate from the grid regulation. The delivery loss costs result from legal processes where NVE 
+		afford institutional customers compensation according to the strength of their claims of damages incurred from loss of delivery from 
+		the grid companies. These legal processes are solved according to separate calculative processes detailed in a different set of 
+		regulatory documents.
+		</p> 
+
+		<p>To demonstrate the bureaucratic complexity of these calculative techniques, we can further unpack one of the nested terms of the 
+		original <i>TI</i> <sub>[year]</sub> calculation, the income roof (<i>IR</i> <sub>[year]</sub>).
+		<label for="36" class="margin-toggle">&#8853;</label><input type="checkbox" id="36" class="margin-toggle">
+		<span class="marginnote">
+		<span style="display: block;">The formula for calculating income roof for a given year:<br />
+		<span class="math display">
+		<span class="math display">\[IR_{2007} = 0,5 K_{2007} + 0,5 *K_{2007} + JP_{2007}\]
+		</span></span></span></span>		
+		While acting as an input term in <i>TI</i> <sub>[year]</sub>, it is itself a formula consisting 
+		of three terms. The last term, the investment addition (<i>JP</i> <sub>[year]</sub>), is an additional term that allows for the company investments. 
+		Similarly, the grid company contributes their account of cost basis for a given year, and NVE provide what they call a cost norm for 
+		what they expect a company of a certain size and scope to have in costs, and these two terms each make up half of the final cost basis 
+		(hence the cost basis <i>K</i> is set to 0,5 each for the company and NVE).
+		</p>
+
+		<p>While it is not possible to discern how NVE calculate their half of <i>K</i> from the above mentioned document, the company is required to 
+		provide a break-down of the number, given as a set of terms in <i>K</i> <sub>[year]</sub>. 
+		<label for="37" class="margin-toggle">&#8853;</label><input type="checkbox" id="37" class="margin-toggle">
+		<span class="marginnote">
+		<span style="display: block;">The terms involved in calculating a company’s cost basis for a given year:<br />
+		<span class="math display">
+		<span class="math display">\[K_{2007} = (DV_{2005}+KILE_{2005})\times \frac{KPI_{2007}}{KPI_{2005}}+NT_{2005}\\
+		\times P_{2007} + AVS_{2005} + AKG_{2005}\times r_{2007}\]
+		</span></span></span></span>
+		These are the costs of running and maintaining the electricity 
+		grid (<i>DV</i> <sub>[year-2]</sub>)in the formula), the general rise in costs given by the consumer price index (<i>KPI</i> <sub>[year]</sub>, which is 
+		provided yearly on the basis of calculations by Statistics Norway), a reference price of buying electricity through the electricity 
+		exchange NordPool (<i>P</i> <sub>[year]</sub>, set on the basis of the weighted average monthly consumption in the various grid regions of Norway) 
+		and some more terms for write-downs of the value of invested grid capital (<i>AVS</i> <sub>[year-2]</sub> and <i>AKG</i> <sub>[year-2]</sub>).
+		</p>
+
+		<p>The last term of <i>K</i> <sub>[year]</sub> is the general reference interest rate <i>r</i> <sub>[year]</sub>. 
+		<label for="tufte-mn-37" class="margin-toggle">&#8853;</label>
+		<input type="checkbox" id="tufte-mn-37" class="margin-toggle">
+		<span class="marginnote">
+		<span style="display: block;">Calculating the general interest rate for a given year: <br />
+		<span class="math display"><span class="math display">\[r_{2007} = (1-G) \times \frac {R_f + Infl + \beta_e \times MP}{1-s}\\ 
+		+ G \times (Swap + KP)\]</span></span><br />
+		</span></span>
+		This number is provided by the Bank of Norway each year as an average of the interest rates it provides throughout the year. 
+		The determination of the interest rate relies on a host of terms 
+		concerning financial and economic issues ranging from the state of the housing market, the general employment level, the consumer price 
+		index (which also featured in the formula of K that r[year] is a part of in the case of the costs that grid companies have during a year) 
+		and other pertinent factors, and is a part of the normal operation of the political-economic body that is the central bank. Each of 
+		these terms is itself the result of calculative negotiations originating elsewhere in the socio-technical regime of ‘the economy’. 
+		And here, on the fourth nested iteration of one regulatory calculation among many, it is time to stop so as not to drown in calculative 
+		terms.
+		</p>
+	</section>
+	
+	<section>
+	<h2 id="calcudem">Calculative democracy</h2>
+		<p>As we can see, the construction of a single number that ultimately determines how much the grid company is allowed to charge its 
+		customers in a given year rests on a host of other calculations. These again are subject to the same calculative and re-calculative 
+		techniques that lend weight to their legitimacy, so that trying to follow all of them leads to a merry dance of justificatory calculations 
+		and numbers that may seem abstract but which have real consequences. Untangling these calculations and tracing their lineage through other 
+		calculations reveal something about the nature of technologies of governance, but it still remains a rather opaque process. Even armed with 
+		the level-headed and thorough explanation of all the terms of the various formulas that prefaces all the documents consulted in this case, 
+		it is hard to evaluate the value of the claims made by the calculations. For example, knowing that a reference rate of discounts for 
+		investments (<i>JP</i> <sub>[year]</sub>) exists does not provide much of an explanation of who came up with that particular formula, which deliberations went 
+		into its inclusion (and the exclusion of other terms) or even what that number is - this is proprietary information, only shared by NVE and 
+		the company in question. A look at these formulas also reveals the importance of paper trails in modern bureaucracies. While the specific 
+		formulas that govern grid company income were found in a single policy document, their genesis and the calculative rationale behind them 
+		cannot be found in any one place - in fact, to arrive at the very limited overview of Figure 1 provided above a total of eight different 
+		documents must be consulted (see Appendix), and this is leaving out the terms that come from the financial sector or the careful calculations 
+		of the central statistical bureau of Norway. Rather, the varying rules for determining the input factors in the formulas are detailed in a 
+		bewildering array of regulatory documents, not all of which are made public for more than the short period of time they are up for negotiation 
+		between the grid companies and the state. It is also not always clear where one can go to identify the terms used in the various calculations, 
+		as these regulatory documents only sometimes carry references to other such documents. On the whole, the process strongly relies on the 
+		competencies of a few insiders with the tacit knowledge of where and under what circumstances such calculations are produced. All in all, 
+		it is questionable whether more than a few people in each company (or their hired consultants) as well as a small group in NVE ever take part 
+		in these negotiations or would know how to evaluate the claims and positions present. Yet the outcomes affect us all.
+		</p>
+	
+		<p>Another important aspect of these calculative techniques is their role as foci of contests of power between actors in the electricity 
+		market and the state. Every one of these calculations is the site of potential controversy. For example, by the time of the documents 
+		detailed above, it had been decided that the value for the cost norm of grid companies that was provided by NVE would be changed from 
+		0.5 <i>K*</i> to 0.6 <i>K*</i> (and consequently, that the grid companies’ share of the cost basis would go down to 0.4 <i>K</i>) in 
+		order to reduce the impact of widely differing cost basis from the companies. This led to complaints from grid companies that the state, 
+		an external actor with limited insight into the internal economy of the companies, had a too large impact on the income of grid companies. 
+		These complaints were not borne out, as the NVE ruled that the state had the right to set the terms of income for the grid companies.
+		</p>
+
+		<p>The correct compensation utilities have to pay customers in cases of lack of delivery, the <i>KILE</i> number, is another contentious 
+		calculation where large-scale buyers of electricity were also drawn in as afflicted parties in the legal push and pull between utilities and 
+		regulators. In fact, these calculations form the basis for sustained legal battles between grid companies which seek to maximise their annual 
+		income and the regulators that try to limit the abuse of monopoly power.
+		</p>
+
+		<p>This is not to say that there is an entirely antagonistic relationship between the state and the grid companies. It is clear that in 
+		many ways the current regulatory system is the result of a longstanding negotiation and back-and-forth between regulator and regulated 
+		over the most suitable terms of engagement. If the positions were ever to move to far away from each other, the system would most likely 
+		experience a strain it has not so far done, as can be witnessed by the fact that most negotiations are done rather amicably. The point 
+		is rather that these factors - the nesting of calculations, the regulatory thicket, the contestedness of calculative techniques and 
+		valuative processes - all have an effect on who has a say in a vital infrastructure. As such, it has a bearing on how a vital matter of 
+		concern functions in the setting of a market-based democracy, and in the even wider sense, should inform our understanding of the 
+		possibilities for democratic control of highly complex and interconnected systems and infrastructures.
+		</p>
+
+		<p>The liberalization of the Norwegian electricity market is often termed a deregulation, but given the immense amount of regulation 
+		connected to the control of the grid companies’ income this seems to be a misnomer. Rather, we might speak of a re-regulation rather 
+		than de-regulation. However, while reintroducing regulation is often hailed as a way of reinstating public control over what are deemed 
+		crucial socio-technical constructions for society, the example of the kinds of documents that form the regulatory core of this system 
+		would seem to imply that it would mostly be a question of handing decision-making control over to a new group of sequestered experts. 
+		After all, no-one can actually follow these controversies - both due to the actual negotiations largely going on behind closed doors and 
+		due to the sheer opaqueness of the calculative techniques and their documentation. There are few avenues of public engagement. These 
+		sites of battle are far away from participatory democracy, even if they constitute the core of what Lamont calls ‘burning topics’ in 
+		democracy.<label for="35" class="margin-toggle sidenote-number"></label>
+		<input type="checkbox" id="35" class="margin-toggle"/>
+		<span class="sidenote"> 
+		Lamont, Michèle. 2012. Toward a comparative sociology of valuation and evaluation. <i>Annual Review of Sociology</i> 38.
+		</span>
+
+		<p>The complexity of today’s arrangement calls to mind the black-boxing of technologies so well-known from science and technology 
+		studies, where the assumptions that underlie socio-technical solutions are removed from the public eye and placed in the black box. 
+		In this sense, it is somewhat ironic that every part of the income calculation process for grid companies in Norway is in principle 
+		in the open, with all documents obtainable from a public source (if only for a limited time frame, as with the document used as an 
+		example in this article), and yet the reasoning that is embedded in these documents is still so elusive. As such, it might make more 
+		sense to talk of a photochromatic box rather than a black one - it is seemingly transparent until light is shined directly on it, 
+		when it turns out to be opaque after all.
+		</p>
+	</section>
+	
+	<section>
+	<h2 id="conclusion">Conclusion</h2>
+		<p>In this article, we have tried to discuss the importance of paying close attention to the ways in which the on-going process of 
+		bringing economic reasoning to bear on what is essentially political processes can make a tiny contribution towards a deeper 
+		understanding of how modern society is governed. Economisation is about a specific framing/formatting of something as economic, 
+		but framing something is as much as about what is left outside the frame as what is placed in it. In the case of the Norwegian 
+		electricity market, when the production side was economised, or rather re-regulated as argued above, the distribution side had to be 
+		reconfigured to respond to the economization. In this sense, this can be seen as a by-product of the main economization process, an 
+		indirect economization.
+		</p>
+
+		<p>The above discussion points to the obvious political nature of these supposedly depoliticised issues. Even if attempts have 
+		been made to cleanse the running of the electricity system of non-economic concerns, the negotiated nature of calculations show the 
+		clear implications increasing technocratisation has for the possibilities to manage large and complex technical systems in a democratic 
+		fashion. Indeed, we could say that economisation itself in this case has led to an increased technocratisation. Only a handful of 
+		experts will ever have access to the main guidelines that ultimately decide how much of citizens’ disposable income will have to go 
+		to paying for access to electricity, never mind actually understanding how these guidelines are made and what the consequences of 
+		minor changes to them are.
+		</p>
+
+		<p>Of course, it could be convincingly argued that the previous situation - engineers making their long-term marginal cost of 
+		production calculations and delivering them to politicians who were not necessarily able to judge the quality of them - did not 
+		exactly invite much democratic deliberation either. In fact, there has never been a situation where a central infrastructure like 
+		the electricity system has not been dominated by a Weberian rational-legal authority. However, this is still not to say that rule 
+		by engineers or economists is equal in nature. Regardless of how opaque the previous situation was, there was at least the possibility 
+		of a political engagement due to the rounds the cost of our energy infrastructure had to make in an arena of democratic representation. 
+		Members of Parliament are perhaps not equipped to have the final say in what the ‘correct’ price of electricity should be, but it 
+		remains a fact that it used to make an appearance in a court of opinion every year, reminding us that the organisation of our 
+		infrastructure is a political as well as a technical question.
+		</p>
+
+		<p>We would argue that the case of the economic performativity of processes of economisation of infrastructure, direct or indirect, 
+		is an interesting avenue for further exploration in order to seek answers to questions of democratically legitimate decision making 
+		or the reversibility of political decisions. A valuative investigation into the change process we have described in this paper would 
+		be instructive in this regard, as would any attention given to sites of indirect economisation as potentially more openly contestable 
+		sites of controversy.
+		</p>
+	</section>
+	
+	<section>
+	<h2 id="appendix">Appendix</h2>
+		<div class="table-wrapper">
           <span class="table-caption">
-            Table 1: first row of metcars.
+            Table 1: List of regulatory documents detailing the calculation of grid company income regulation. Other relevant sources are 
+			posts from the electronic reporting tool eRapp, and draft versions of the calculations of cost norms that were the focus of 
+			debate in 2006.
             </span>
           <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
-            <thead><th></th><th>mpg</th><th>cyl</th><th>disp</th><th>hp</th><th>drat</th><th>wt</th></thead>
+            <thead><th>Type</th><th>Title</th></thead>
             <tbody>
-              <tr><td class="text">Mazda RX4</td><td>21.0</td><td>6</td><td>160</td><td>110</td><td>3.90</td><td>2.62</td></tr>
-              <tr><td class="text">Mazda RX4 Wag</td><td>21.0</td><td>6</td><td>160</td><td>110</td><td>3.90</td><td>2.88</td></tr>
-              <tr><td class="text">Datsun 710</td><td>22.8</td><td>4</td><td>108</td><td>93</td><td>3.85</td><td>2.32</td></tr>
-              <tr><td class="text">Hornet 4 Drive</td><td>21.4</td><td>6</td><td>258</td><td>110</td><td>3.08</td><td>3.21</td></tr>
-              <tr><td class="text">Hornet Sportabout</td><td>18.7</td><td>8</td><td>360</td><td>175</td><td>3.15</td><td>3.44</td></tr>
-              <tr><td class="text">Valiant</td><td>18.1</td><td>6</td><td>225</td><td>105</td><td>2.76</td><td>3.46</td></tr>
+              <tr><td class="text">NVE Document 12/90 no. 959</td><td>Regulation of the production, transformation, transmission, sale, 
+			  distribution and use of energy etc.</tr>
+			  <tr><td class="text">NVE Document 3/99 no. 302</td><td>Regulation of economic and technical reporting, income and tariffs 
+			  of grid companies</tr>
+			  <tr><td class="text">NVE Report 4/2004</td><td>Principles for regulating grid entities’ income</tr>
+			  <tr><td class="text">NVE Document 9/2005</td><td>The economic regulation of the electricity grid</tr>
+			  <tr><td class="text">NVE Document 19/2005</td><td>Changes in regulation 1999 no. 302 on economic and technical reporting</tr>
+			  <tr><td class="text">NVE Document 3/2006</td><td>The economic regulation of the electricity grid. 
+			  Proposition regarding changes to KILE, reference interest rate, investments adjustments etc.</tr>
+			  <tr><td class="text">NVE Document 11/2006</td><td>The economic regulation of the electricity grid. Summary of the 2006 
+			  hearing and changes to the regulation of economic and technical reporting</tr>
+			  <tr><td class="text">NVE Note 08.12.2006</td><td>On the designation of cost norm for 2007</tr>
             </tbody>
           </table>
         </div>
-    </section>
-
-
-    <section>
-      <h2 id="navcode">Code</h2>
-      <p>Code samples are monospace using the <span class="code">code</span> class, as I've been using in this document to denote HTML tags like the word 'code' earlier in this sentence. Code blocks use that class in conjunction with the <span class="code">pre</span> tag, which gives us indentation too:</p>
-      <pre class="code">
-// imperative programming:
-for (i = 0; i++; i <= num) {
-   all_the_things[i].useEnvisioned();
-}
-      </pre>
     </section>
   </article>
 
