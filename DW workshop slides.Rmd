@@ -26,10 +26,33 @@ Let's also ask them *what type* of research they are doing - this helps us get a
 
 Results of our little survey:
 
-```{r group, include = FALSE, echo = FALSE}
-group <- tibble(Name = c("Henrik"),
-                Field = c("Bibliometrics"),
-                Research = c("Statistics, coding, prose"))
+```{r group, include = TRUE, echo = FALSE}
+group <- tibble(Field = c("Bibliometrics",
+                          "Game studies",
+                          "Mathematics",
+                          "Petroleum engineering",
+                          "Energy and process engineering",
+                          "Digital transformation",
+                          "Computer science",
+                          "Learning analytics",
+                          "Humanities",
+                          "Cybernetics",
+                          "Archeology",
+                          "Digital infrastructure",
+                          "Decision sciences"),
+                Research = c("Statistics, coding, prose",
+                             "Qualitative, game logs",
+                             "Coding, pen and paper",
+                             "Statistics, risk analysis",
+                             "Quantitative and qualitative",
+                             "Text data, modelling",
+                             "Algorithm, sensor data",
+                             "Sensor data",
+                             "Video data",
+                             "Simulation",
+                             "",
+                             "",
+                             "Coding"))
 
 knitr::kable(group)
 ```
@@ -107,6 +130,7 @@ Many research funders now require the development of a heap of auxiliary informa
 
 ![](SoMe_overlap.png){.img}
 
+
 <font size="2">Mikki, S., M. Zygmuntowska, Ø. L. Gjesdal, H. A. Al Ruhewy (2015) [Digital Presence of Norwegian Scholars on Academic Network Sites—Where and Who Are They?](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142709) *PLoS ONE*</font>
 
 ## A more realistic project plan
@@ -168,13 +192,13 @@ knitr::kable(storytime[1:5, 18:22])
 
 ## Just don't do it
 
-![](i would prefer not to.png){.imgwide}
+![](not_prefer.png){.imgwide}
 
 ## 
 
 <div class="columns-2">
 
-  ![](not_prefer.png){.imgtall}
+  ![](keep_calm.png){.imgtall}
   
   - Research habits change very slowly
     - Being too far ahead of the pack can be more work than it's worth
