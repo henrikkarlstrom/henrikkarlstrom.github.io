@@ -105,7 +105,7 @@ Many research funders now require the development of a heap of auxiliary informa
 
 ## Social media
 
-![](SoMe overlap.png){.img}
+![](SoMe_overlap.png){.img}
 
 <font size="2">Mikki, S., M. Zygmuntowska, Ø. L. Gjesdal, H. A. Al Ruhewy (2015) [Digital Presence of Norwegian Scholars on Academic Network Sites—Where and Who Are They?](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142709) *PLoS ONE*</font>
 
@@ -174,7 +174,7 @@ knitr::kable(storytime[1:5, 18:22])
 
 <div class="columns-2">
 
-  ![](keep_calm.png){.imgtall}
+  ![](not_prefer.png){.imgtall}
   
   - Research habits change very slowly
     - Being too far ahead of the pack can be more work than it's worth
@@ -199,7 +199,7 @@ If I can, how much time and effort is it worth?
 
 ## The general idea
 
-![](data track.png){.imgwide}
+![](data_track.png){.imgwide}
 
 
 ## Collaborating
