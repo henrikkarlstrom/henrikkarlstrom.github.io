@@ -26,3 +26,18 @@ slides > slide:not(.nobackground):before {
 .img {
     width: 600px !important;
 }
+
+.imgwide {
+    width: 800px !important;
+}
+
+.imgtall {
+    height:400px !important;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 1.5em;
+}
