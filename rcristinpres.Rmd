@@ -100,9 +100,8 @@ get_cristin_results(contributor = "25062") %>%
 ```
 
 ```{r henrik}
-#suppressMessages(
-  get_cristin_results(contributor = "25062") %>%
-  select(cristin_result_id, title, journal.name)#)
+suppressMessages(get_cristin_results(contributor = "25062") %>%
+  select(cristin_result_id, title, journal.name))
 ```
 
 
