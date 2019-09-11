@@ -19,6 +19,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Tema for dagen
 
+- Hva bruker vi R til ved NTNU?
+
 - Cristindata i NTNUs virksomhetsstyring
 
 - Script for full import av Cristindata
@@ -26,6 +28,17 @@ knitr::opts_chunk$set(echo = FALSE)
 - En R-pakke for Cristin API
 
 - Bruk av rcristin i applikasjoner 
+
+
+## Bruk av R ved NTNU
+
+- (Halv)automatiserte rapporter for egenarkivering via DUCT
+
+- Bibliometriske litteraturoversikter via Dimensions API og VOSviewer
+
+- Forskerprofilering via Scopus API
+
+- Integrasjon med vårt virksomhetsstyringssystem
 
 
 ## Bevisst - NTNUs virksomhetsstyringssystem
@@ -87,8 +100,9 @@ get_cristin_results(contributor = "25062") %>%
 ```
 
 ```{r henrik}
-suppressMessages(get_cristin_results(contributor = "25062") %>%
-  select(cristin_result_id, title, journal.name))
+#suppressMessages(
+  get_cristin_results(contributor = "25062") %>%
+  select(cristin_result_id, title, journal.name)#)
 ```
 
 
